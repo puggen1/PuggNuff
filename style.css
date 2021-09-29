@@ -1,18 +1,20 @@
-body{
+body {
   background-color: black;
   text-align: center;
-
 }
-div{
+div {
   height: 250px;
-  
+
   border: solid white 1px;
   border-radius: 20px;
   vertical-align: middle;
 }
-h1{
+h1 {
   position: relative;
   top: 35%;
 
   color: white;
+}
+p {
+  color: red;
 }
