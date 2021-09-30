@@ -7,3 +7,5 @@ Bendik Kvam
 the rightfull owner 
 future expert in html
 
+this is a test
+
