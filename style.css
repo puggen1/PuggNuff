@@ -12,9 +12,15 @@ div {
 h1 {
   position: relative;
   top: 35%;
-
   color: white;
 }
+
 p {
   color: red;
+
+}
+
+a{
+  color: yellow;
+  
 }
