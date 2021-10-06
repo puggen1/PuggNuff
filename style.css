@@ -1,33 +1,30 @@
 body {
-  background-color: black;
+  background-color: rgb(58, 44, 44);
   text-align: center;
+  align-content: center;
 }
 div {
-  height: 250px;
-
+  height: auto;
   border: solid white 1px;
   border-radius: 20px;
-  vertical-align: middle;
+  align-content: center;
+  margin: 50px;
 }
 h1 {
-  position: relative;
-  top: 35%;
   color: white;
 }
-h2{
-
+h2 {
   color: white;
 }
 
 p {
   color: red;
-
 }
 
-a{
+a {
   color: yellow;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
