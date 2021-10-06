@@ -1,9 +1,14 @@
 body {
+  background-color: #e5e5e5;
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 0px;
 }
 header {
   display: grid;
-  grid-template-columns: 200px auto auto;
-  position: absolute;
+  grid-template-columns: 200px 2fr auto;
+
   width: 1920px;
   height: 144px;
   left: 0px;
@@ -11,26 +16,66 @@ header {
   background-color: rgb(39, 117, 206);
 }
 nav {
+  float: right;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 232px 232px 232px;
   height: 44px;
+}
+main {
+  position: absolute;
+  display: grid;
+  margin: auto;
+  top: 165px;
 }
 .logo {
   height: 144px;
 }
 .nav-element {
   border-right: 1.5px solid #ff790a;
+  width: 232px;
+}
+.nav-element-last {
+  width: 232px;
+}
+
+.about-me {
+  top: 165px;
+  text-align: center;
+}
+.about-me-p {
+  border-top: 1px solid #006be6;
+  border-bottom: 1px solid #006be6;
+  text-align: left;
+  width: 508px;
+  align-content: center;
+  margin-bottom: 30px;
+}
+.filler {
 }
 
 h1 {
+  font-family: Oswald;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  color: #ff790a;
 }
+
 h2 {
 }
 
-p {
+.about-me-p p {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  width: 338px;
+  margin: 20px auto 20px auto;
 }
 
 a {
@@ -41,11 +86,22 @@ a {
   font-size: 30px;
   line-height: 44px;
   text-align: center;
-
+  width: 125px;
   color: #374a61;
   text-decoration: none;
 }
-a:hover {
+.cta {
+  background-color: #0a213a;
+  color: #d4eeff;
+  font-weight: normal;
+  width: 123px;
+  height: 54px;
+  border: 1px solid #0a213a;
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  margin-top: 40px;
 }
-a:active {
+.cta:hover {
+  background-color: rgba(10, 33, 58, 0.9);
+  border: 1px solid rgba(10, 33, 58, 0.9);
 }
