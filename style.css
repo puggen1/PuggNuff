@@ -4,31 +4,30 @@ body {
   align-content: center;
 }
 header {
-  
   display: grid;
   align-content: center;
   justify-content: center;
   grid-template-columns: 200px;
 }
-nav{
+nav {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.test{
+.test {
   background-color: white;
   border: solid white 1px;
   border-radius: 20px;
 }
-}
+
 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 h2 {
   color: white;
 }
 
 p {
-  color:rgb(40, 62, 109);
+  color: rgb(40, 62, 109);
 }
 
 a {
@@ -41,11 +40,14 @@ a {
   height: 30px;
   color: white;
   text-decoration: none;
-  size:  50px;
+  size: 50px;
   text-align: center;
 }
 a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: black;
-  border:solid black 2px;
+  border: solid black 2px;
+}
+a:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
