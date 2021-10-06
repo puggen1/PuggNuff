@@ -1,53 +1,51 @@
 body {
-  background-color: rgb(58, 44, 44);
-  text-align: center;
-  align-content: center;
 }
 header {
   display: grid;
-  align-content: center;
-  justify-content: center;
-  grid-template-columns: 200px;
+  grid-template-columns: 200px auto auto;
+  position: absolute;
+  width: 1920px;
+  height: 144px;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(39, 117, 206);
 }
 nav {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 44px;
 }
-.test {
-  background-color: white;
-  border: solid white 1px;
-  border-radius: 20px;
+.logo {
+  height: 144px;
+}
+.nav-element {
+  border-right: 1.5px solid #ff790a;
 }
 
 h1 {
-  color: rgb(0, 0, 0);
 }
 h2 {
-  color: white;
 }
 
 p {
-  color: rgb(40, 62, 109);
 }
 
 a {
-  border: solid white 2px;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-top: 10px;
-  height: 30px;
-  color: white;
-  text-decoration: none;
-  size: 50px;
+  margin: auto;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
   text-align: center;
+
+  color: #374a61;
+  text-decoration: none;
 }
 a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: black;
-  border: solid black 2px;
 }
 a:active {
-  background-color: rgba(255, 255, 255, 0.3);
 }
