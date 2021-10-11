@@ -92,5 +92,22 @@ height: 365px;
 left: 0px;
 top: 1036px;
 }
+footer img{
+  position: absolute;
+  top:37%;
+  right:6%;
+}
+.instagram{
+  position: absolute;
+  top:50%;
+  left: 90%;
+  width: 101px;
+  font-family: Oswald;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
 
 
