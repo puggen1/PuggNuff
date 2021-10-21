@@ -1,3 +1,6 @@
+html {
+  max-width: 100%;
+}
 body {
   background-color: #e5e5e5;
   position: absolute;
@@ -8,8 +11,6 @@ body {
 header {
   display: grid;
   grid-template-columns: 200px 2fr auto;
-
-  width: 1920px;
   height: 144px;
   left: 0px;
   top: 0px;
@@ -25,8 +26,9 @@ nav {
   height: 44px;
 }
 main {
-  position: absolute;
   display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: auto 1px auto;
   margin: auto;
   top: 165px;
 }
@@ -40,9 +42,16 @@ main {
 .nav-element-last {
   width: 232px;
 }
-
+.filler {
+}
+/* about me section*/
 .about-me {
-  top: 165px;
+  margin: 0 auto;
+  padding: 45px 0 20px 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 425px;
+  box-sizing: border-box;
   text-align: center;
 }
 .about-me-p {
@@ -53,9 +62,22 @@ main {
   align-content: center;
   margin-bottom: 30px;
 }
-.filler {
+/* space between */
+.space {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-bottom: 2px solid #006be6;
 }
-
+/*gallery section */
+.index-gallery {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
 h1,
 h2 {
   font-family: Oswald;
@@ -63,6 +85,7 @@ h2 {
   font-style: normal;
   line-height: 44px;
   color: #ff790a;
+  text-align: center;
 }
 h2 {
   line-height: 35px;
@@ -172,10 +195,4 @@ footer img {
   font-size: 13px;
   line-height: 20px;
   text-align: center;
-}
-hr {
-  position: absolute;
-  width: 1920px;
-  top: 429px;
-  border: 1px solid #006be6;
 }
