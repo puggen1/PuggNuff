@@ -114,6 +114,5 @@ footer img{
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
     body{
-      width: 2637px;
     }
   }
