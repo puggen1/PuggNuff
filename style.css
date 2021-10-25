@@ -7,7 +7,6 @@ body {
   display: grid;
   grid-template-rows: auto auto;
   margin: 0px;
-  font-family: "Montserrat", sans-serif;
 }
 header {
   display: grid;
@@ -51,7 +50,7 @@ main {
   padding: 45px 0 15px 0;
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 425px;
+  height: 450px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -87,7 +86,7 @@ h2 {
 }
 
 .about-me-p p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -110,6 +109,7 @@ a {
   color: #293747;
   text-decoration: none;
 }
+
 nav a:hover {
   color: #d4eeff;
 }
@@ -118,7 +118,6 @@ nav a:hover {
   color: #d4eeff;
   font-weight: normal;
   width: 123px;
-  height: 54px;
   border: 1px solid #0a213a;
   border-radius: 10px;
   padding: 10px 5px 10px 5px;
@@ -133,8 +132,8 @@ nav a:hover {
 .index-gallery {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-  grid-template-rows: auto auto;
-  margin: 0 auto;
+  grid-template-rows: auto auto auto;
+  margin: 40px auto;
 }
 .index-gallery h2 {
   grid-row-start: 1;
@@ -142,6 +141,9 @@ nav a:hover {
   grid-column-start: 3;
   grid-column-end: 4;
   margin: 0 auto;
+  padding: 35px 0;
+  font-weight: normal;
+  font-size: 30px;
 }
 .image-box {
   width: 450px;
@@ -152,6 +154,20 @@ nav a:hover {
   padding: 10px 5px;
   margin: 10px;
 }
+/* aligning text different, and diffrent font style*/
+.image-box p {
+  padding-left: 33px;
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.image-box p:last-child {
+  padding-left: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* placing in correct grid possistion */
 #img1 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -164,12 +180,21 @@ nav a:hover {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
 .image-box img {
+  width: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
 }
+/* gallery cta */
+.index-gallery .cta {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+/* footer */
 footer {
   max-width: 100%;
   display: grid;
@@ -239,10 +264,10 @@ section.instagram {
 }
 footer p {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 16px;
   letter-spacing: -0.075em;
   color: white;
@@ -252,7 +277,7 @@ footer p {
 p.instagram {
   padding: 0px;
   margin: auto;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 13px;
