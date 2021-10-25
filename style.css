@@ -17,6 +17,9 @@ header {
   /*background-color: rgb(39, 117, 206);*/
   background-color: #2b7fe0;
 }
+header img {
+  height: 75px;
+}
 nav {
   float: right;
   text-align: center;
@@ -34,7 +37,7 @@ main {
   top: 165px;
 }
 .logo {
-  height: 144px;
+  margin: auto auto;
 }
 .nav-element {
   border-right: 1.5px solid #ff790a;
