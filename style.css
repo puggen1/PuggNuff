@@ -5,28 +5,29 @@ body {
   background-color: #e5e5e5;
   position: absolute;
   display: grid;
-  grid-template-areas: "logo . . nav nav nav"
-                        ". main main main main ."
-                        ". main main main main ."
-                        ". main2 main2 main2 main2 ."
-                        ". main2 main2 main2 main2 ."
-                        "footer footer footer footer footer footer";
+  grid-template-areas:
+    "header header header header header header"
+    ". main main main main ."
+    ". main main main main ."
+    ". main2 main2 main2 main2 ."
+    ". main2 main2 main2 main2 ."
+    "footer footer footer footer footer footer";
   margin: 0px;
+  max-width: 100%;
 }
-header{
-  grid-area: "logo";
+header {
   height: 144px;
-  left: 0px;
-  top: 0px;
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  grid-area: header;
   /*background-color: rgb(39, 117, 206);*/
   background-color: #2b7fe0;
 }
-.filler{
-  grid-area: "."
-}
-.filler img{
+.logo img {
   height: 75px;
-
+}
+.filler img {
+  height: 75px;
 }
 nav {
   float: right;
@@ -39,6 +40,7 @@ nav {
 }
 main {
   display: grid;
+  grid-area: main;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: auto 1px;
   margin: auto;
@@ -142,6 +144,7 @@ nav a:hover {
 
 .index-gallery {
   display: grid;
+  grid-area: main2;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   grid-template-rows: auto auto auto;
   margin: 40px auto;
@@ -199,7 +202,8 @@ nav a:hover {
   margin-right: auto;
 }
 /* gallery cta */
-.index-gallery .cta {
+.index-gallery .cta-div {
+  margin: 0 auto;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -209,6 +213,7 @@ nav a:hover {
 footer {
   max-width: 100%;
   display: grid;
+  grid-area: footer;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 122px 122px 122px;
   height: 365px;
@@ -294,4 +299,64 @@ p.instagram {
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+}
+.nav {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "header"
+      "main"
+      "main2"
+      "footer";
+  }
+  main {
+    width: 100%;
+  }
+  header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .logo {
+    grid-column: 2/3;
+  }
+  .filler {
+    grid-column: 3/4;
+  }
+  .nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .fas {
+    font-size: 50px;
+  }
+  main {
+    display: block;
+    max-width: 100%;
+  }
+  .about-me {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .about-me-p {
+    margin: 30px auto;
+    width: 80%;
+  }
+  .index-gallery {
+    display: block;
+  }
+  .image-box {
+    margin: 30px;
+  }
+  .cta-div {
+    display: flex;
+  }
 }
