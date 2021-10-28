@@ -5,20 +5,28 @@ body {
   background-color: #e5e5e5;
   position: absolute;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-areas: "logo . . nav nav nav"
+                        ". main main main main ."
+                        ". main main main main ."
+                        ". main2 main2 main2 main2 ."
+                        ". main2 main2 main2 main2 ."
+                        "footer footer footer footer footer footer";
   margin: 0px;
 }
-header {
-  display: grid;
-  grid-template-columns: 200px 2fr auto;
+header{
+  grid-area: "logo";
   height: 144px;
   left: 0px;
   top: 0px;
   /*background-color: rgb(39, 117, 206);*/
   background-color: #2b7fe0;
 }
-header img {
+.filler{
+  grid-area: "."
+}
+.filler img{
   height: 75px;
+
 }
 nav {
   float: right;
